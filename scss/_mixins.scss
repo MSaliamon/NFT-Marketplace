@@ -1,0 +1,21 @@
+@mixin WorkSans($fs, $fw, $lh) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin SpaceMono($fs, $fw, $lh) {
+    font-family: 'Space Mono', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin flex($fd, $jc, $ai, $gp) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}
