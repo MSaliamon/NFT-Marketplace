@@ -2,3 +2,33 @@
 @import './reset';
 @import './mixins';
 
+body {
+    color: $text-color;
+    background-color: $bg-color;
+    .header {
+        padding: 20px 50px;
+        @include flex(row, space-between, center, 0px);
+        .nav {
+            @include flex(row, center, center, 30px);
+            &__list {
+                @include flex(row, center, center, 30px);
+            }
+            &__link {
+                @include WorkSans(16px, 600, 140%);
+                color: $text-color;
+                text-decoration: none;
+            }
+            &__btn {
+                @include flex(row, center, center, 7px);
+                background-color: $button-color;
+                padding: 20px 30px;
+                border-radius: 20px;
+                &-link {
+                    @include WorkSans(16px, 600, 140%);
+                    color: $text-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
