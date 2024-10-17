@@ -31,4 +31,62 @@ body {
             }
         }
     }
+    .main {
+        .section1 {
+            @include flex(row, flex-start, center, 30px);
+            padding: 80px 100px;
+            &-container1 {
+               @include flex(column, flex-start, flex-start, 30px);
+               width: 46%;
+               &__textbox {
+                   @include flex(column, flex-start, flex-start, 20px);
+                //    width: 53%;
+                   &-title {
+                       @include WorkSans(67px, 600, 110%);
+                    //    width: 90%;
+                   }
+                   &-text {
+                       @include WorkSans(22px, 400, 160%);
+                   }
+               }
+               &__btn {
+                   @include flex(row, center, center, 7px);
+                   @include WorkSans(16px, 600, 140%);
+                   background-color: $button-color;
+                   padding: 20px 30px;
+                   border-radius: 20px;
+               }
+               .section1-box {
+                   @include flex(row, center, center, 30px);
+                   &__cont {
+                       @include flex(column, flex-start, flex-start, 0px);
+                       &-title {
+                           @include SpaceMono(28px, 700, 140%);
+                       }
+                       &-text {
+                           @include WorkSans(24px, 400, 160%);
+                       }
+                   }
+               }
+            }
+            &-container2 {
+                @include flex(column, flex-start, flex-start, 0px);
+                background-color: $bg-secondary;
+                border-radius: 20px;
+                &__user {
+                    @include flex(column, flex-start, flex-start, 10px);
+                    padding: 20px;
+                    &-title {
+                        @include WorkSans(22px, 600, 140%);
+                    }
+                    &-avatar {
+                        @include flex(row, center, center, 10px);
+                        &-name {
+                            @include WorkSans(16px, 400, 140%);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
