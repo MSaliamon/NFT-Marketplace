@@ -40,10 +40,8 @@ body {
                width: 46%;
                &__textbox {
                    @include flex(column, flex-start, flex-start, 20px);
-                //    width: 53%;
                    &-title {
                        @include WorkSans(67px, 600, 110%);
-                    //    width: 90%;
                    }
                    &-text {
                        @include WorkSans(22px, 400, 160%);
@@ -83,6 +81,113 @@ body {
                         @include flex(row, center, center, 10px);
                         &-name {
                             @include WorkSans(16px, 400, 140%);
+                        }
+                    }
+                }
+            }
+        }
+        .section2 {
+            @include flex(column, flex-start, flex-start, 60px);
+            padding: 80px 100px;
+            &-textbox {
+                @include flex(column, flex-start, flex-start, 10px);
+                &__title {
+                    @include WorkSans(38px, 600, 120%);
+                }
+                &__text {
+                    @include WorkSans(22px, 400, 160%);
+                }
+            }
+            &-container {
+                @include flex(row, center, center, 30px);
+                .section2-box {
+                    @include flex(column, flex-start, flex-start, 15px);
+                    &__cont {
+                        @include flex(row, flex-start, center, 15px);
+                        &-block {
+                            padding: 32px 15px;
+                            background-color: $button-color;
+                            border-radius: 20px;
+                            &-text {
+                                @include SpaceMono(22px, 700, 160%);
+                            }
+                        }
+                    }
+                    &__cont2 {
+                        @include flex(column, flex-start, flex-start, 10px);
+                        &-title {
+                            @include WorkSans(22px, 600, 140%);
+                        }
+                        &-avatar {
+                            @include flex(row, center, center, 12px);
+                            &-name {
+                                @include WorkSans(16px, 400, 140%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section3 {
+            padding: 80px 100px;
+            @include flex(column, flex-start, flex-start, 60px);
+            &-container1 {
+                @include flex(row, center, flex-end, 200px);
+                .section3-textbox {
+                    @include flex(column, flex-start, flex-start, 10px);
+                    &__title {
+                        @include WorkSans(38px, 600, 120%);
+                    }
+                    &__text {
+                        @include WorkSans(22px, 400, 160%);
+                    }
+                }
+                &__btn {
+                    @include flex(row, center, center, 7px);
+                    @include WorkSans(16px, 600, 140%);
+                    padding: 20px 50px;
+                    border: 2px solid $button-color;
+                    border-radius: 20px;
+                }
+            }
+            &-container2 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                .section3-box {
+                    @include flex(column, flex-start, center, 20px);
+                    position: relative;
+                    padding: 20px;
+                    background-color: $bg-secondary;
+                    &__number {
+                        position: absolute;
+                        @include WorkSans(22px, 600, 140%);
+                        top: 10px;
+                        left: 10px;
+                        padding: 1px 10px;
+                        background-color: $bg-color;
+                        border-radius: 20px;
+                        &-text {
+                            @include SpaceMono(16px, 400, 140%);
+                            color: $labal-color;
+                        }
+                    }
+                    &__textbox {
+                        @include flex(column, flex-start, flex-start, 10px);
+                        &-name {
+                            @include WorkSans(22px, 600, 140%);
+                        }
+                        &-price {
+                            @include flex(row, center, center, 10px);
+                            &-text1 {
+                                @include WorkSans(18px, 600, 140%);
+                                color: $labal-color;
+                            }
+                            &-text2 {
+                                @include WorkSans(18px, 600, 140%);
+                            }
                         }
                     }
                 }

@@ -216,3 +216,177 @@ body {
             font-size: 16px;
             font-weight: 400;
             line-height: 140%; }
+  body .main .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 80px 100px; }
+    body .main .section2-textbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px; }
+      body .main .section2-textbox__title {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 120%; }
+      body .main .section2-textbox__text {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 160%; }
+    body .main .section2-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; }
+      body .main .section2-container .section2-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px; }
+        body .main .section2-container .section2-box__cont {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 15px; }
+          body .main .section2-container .section2-box__cont-block {
+            padding: 32px 15px;
+            background-color: #A259FF;
+            border-radius: 20px; }
+            body .main .section2-container .section2-box__cont-block-text {
+              font-family: 'Space Mono', sans-serif;
+              font-size: 22px;
+              font-weight: 700;
+              line-height: 160%; }
+        body .main .section2-container .section2-box__cont2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px; }
+          body .main .section2-container .section2-box__cont2-title {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%; }
+          body .main .section2-container .section2-box__cont2-avatar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px; }
+            body .main .section2-container .section2-box__cont2-avatar-name {
+              font-family: 'Work Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 140%; }
+  body .main .section3 {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px; }
+    body .main .section3-container1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 200px; }
+      body .main .section3-container1 .section3-textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px; }
+        body .main .section3-container1 .section3-textbox__title {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 38px;
+          font-weight: 600;
+          line-height: 120%; }
+        body .main .section3-container1 .section3-textbox__text {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 160%; }
+      body .main .section3-container1__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+        padding: 20px 50px;
+        border: 2px solid #A259FF;
+        border-radius: 20px; }
+    body .main .section3-container2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 30px; }
+      body .main .section3-container2 .section3-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        padding: 20px;
+        background-color: #3B3B3B; }
+        body .main .section3-container2 .section3-box__number {
+          position: absolute;
+          font-family: 'Work Sans', sans-serif;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 140%;
+          top: 10px;
+          left: 10px;
+          padding: 1px 10px;
+          background-color: #2B2B2B;
+          border-radius: 20px; }
+          body .main .section3-container2 .section3-box__number-text {
+            font-family: 'Space Mono', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            color: #858584; }
+        body .main .section3-container2 .section3-box__textbox {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px; }
+          body .main .section3-container2 .section3-box__textbox-name {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%; }
+          body .main .section3-container2 .section3-box__textbox-price {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; }
+            body .main .section3-container2 .section3-box__textbox-price-text1 {
+              font-family: 'Work Sans', sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 140%;
+              color: #858584; }
+            body .main .section3-container2 .section3-box__textbox-price-text2 {
+              font-family: 'Work Sans', sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 140%; }
