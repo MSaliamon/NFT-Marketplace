@@ -193,5 +193,76 @@ body {
                 }
             }
         }
+        .section4 {
+            @include flex(column, flex-start, flex-start, 60px);
+            padding: 80px 100px;
+            &__title {
+                @include WorkSans(38px, 600, 120%);
+            }
+            &-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+                .section4-box {
+                    @include flex(column, flex-start, flex-start, 0px);
+                    background-color: $bg-secondary;
+                    border-radius: 20px;
+                    &__container {
+                        padding: 70px;
+                        background-image: url(../img/png/sky.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container2 {
+                        padding: 70px;
+                        background-image: url(../img/png/monkey.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container3 {
+                        padding: 70px;
+                        background-image: url(../img/png/guitar.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container4 {
+                        padding: 70px;
+                        background-image: url(../img/png/human.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container5 {
+                        padding: 70px;
+                        background-image: url(../img/png/cosmos.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container6 {
+                        padding: 70px;
+                        background-image: url(../img/png/key.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container7 {
+                        padding: 70px;
+                        background-image: url(../img/png/basketball.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__container8 {
+                        padding: 70px;
+                        background-image: url(../img/png/sky-house.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    &__textbox {
+                        padding: 20px 30px;
+                        &-text {
+                            @include WorkSans(22px, 600, 140%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -390,3 +390,74 @@ body {
               font-size: 18px;
               font-weight: 600;
               line-height: 140%; }
+  body .main .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 80px 100px; }
+    body .main .section4__title {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 120%; }
+    body .main .section4-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px; }
+      body .main .section4-container .section4-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0px;
+        background-color: #3B3B3B;
+        border-radius: 20px; }
+        body .main .section4-container .section4-box__container {
+          padding: 70px;
+          background-image: url(../img/png/sky.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container2 {
+          padding: 70px;
+          background-image: url(../img/png/monkey.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container3 {
+          padding: 70px;
+          background-image: url(../img/png/guitar.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container4 {
+          padding: 70px;
+          background-image: url(../img/png/human.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container5 {
+          padding: 70px;
+          background-image: url(../img/png/cosmos.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container6 {
+          padding: 70px;
+          background-image: url(../img/png/key.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container7 {
+          padding: 70px;
+          background-image: url(../img/png/basketball.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__container8 {
+          padding: 70px;
+          background-image: url(../img/png/sky-house.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        body .main .section4-container .section4-box__textbox {
+          padding: 20px 30px; }
+          body .main .section4-container .section4-box__textbox-text {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%; }
