@@ -292,7 +292,7 @@ body {
                     @include flex(column, flex-start, flex-start, 0px);
                     .section5-content {
                         @include flex(column, flex-start, flex-start, 27px);
-                        padding: 20px 29px;
+                        padding: 20px 66px 20px 30px;
                         background-color: $bg-secondary;
                         border-radius: 0px 0px 20px 20px;
                         .section5-wrap1 {
@@ -308,11 +308,12 @@ body {
                             }
                         }
                         .section5-wrap2 {
-                            @include flex(row, flex-start, flex-start, 55px);
+                            @include flex(row, flex-start, flex-start, 95px);
                             &__cont {
                                 @include flex(column, flex-start, flex-start, 8px);
                                 &-text {
                                     @include SpaceMono(12px, 400, 110%);
+                                    color: $labal-color;
                                 }
                                 &-text2 {
                                     @include SpaceMono(12px, 400, 140%);

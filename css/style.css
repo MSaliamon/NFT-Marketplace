@@ -521,7 +521,7 @@ body {
           justify-content: flex-start;
           align-items: flex-start;
           gap: 27px;
-          padding: 20px 29px;
+          padding: 20px 66px 20px 30px;
           background-color: #3B3B3B;
           border-radius: 0px 0px 20px 20px; }
           body .main .section5-container2 .section5-box .section5-content .section5-wrap1 {
@@ -551,7 +551,7 @@ body {
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 55px; }
+            gap: 95px; }
             body .main .section5-container2 .section5-box .section5-content .section5-wrap2__cont {
               display: flex;
               flex-direction: column;
@@ -562,7 +562,8 @@ body {
                 font-family: 'Space Mono', sans-serif;
                 font-size: 12px;
                 font-weight: 400;
-                line-height: 110%; }
+                line-height: 110%;
+                color: #858584; }
               body .main .section5-container2 .section5-box .section5-content .section5-wrap2__cont-text2 {
                 font-family: 'Space Mono', sans-serif;
                 font-size: 12px;
