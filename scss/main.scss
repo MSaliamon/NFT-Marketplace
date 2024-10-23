@@ -324,5 +324,37 @@ body {
                 }
             }
         }
+        .section6 {
+            @include flex(column, flex-start, flex-start, 48px);
+            padding: 80px 100px;
+            &-textbox {
+                @include flex(column, flex-start, flex-start, 10px);
+                &__title {
+                    @include WorkSans(38px, 600, 120%);
+                }
+                &__text {
+                    @include WorkSans(22px, 400, 160%);
+                }
+            }
+            &-container {
+                @include flex(row, center, center, 30px);
+                .section6-box {
+                    @include flex(column, flex-start, center, 20px);
+                    background-color: $bg-secondary;
+                    padding: 10px 30px 30px 30px;
+                    border-radius: 20px;
+                    &__textbox {
+                        @include flex(column, flex-start, center, 10px);
+                        &-text1 {
+                            @include WorkSans(22px, 600, 140%);
+                        }
+                        &-text2 {
+                            @include WorkSans(16px, 400, 140%);
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
