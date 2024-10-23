@@ -356,5 +356,39 @@ body {
                 }
             }
         }
+        .section7 {
+            @include flex(row, center, center, 80px);
+            padding: 40px 100px 80px 100px;
+            &-container {
+                @include flex(column, center, flex-start, 40px);
+                &__textbox {
+                    @include flex(column, center, flex-start, 10px);
+                    &-title {
+                        @include WorkSans(38px, 600, 120%);
+                        width: 70%;
+                    }
+                    &-text {
+                        @include WorkSans(22px, 400, 160%);
+                        text-transform: capitalize;
+                    }
+                }
+                &__label {
+                    @include flex(row, center, center, 0px);
+                    background-color: $text-color;
+                    border-radius: 20px;
+                    &-input {
+                        padding: 16px 20px;
+                        border-radius: 20px;
+                    }
+                    &-btn {
+                        @include flex(row, center, center, 12px);
+                        @include WorkSans(16px, 600, 140%);
+                        background-color: $button-color;
+                        padding: 16px 50px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
     }
 }
