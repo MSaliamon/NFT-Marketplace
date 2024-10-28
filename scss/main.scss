@@ -391,4 +391,66 @@ body {
             }
         }
     }
+    .footer {
+        @include flex(column, flex-start, flex-start, 30px);
+        padding: 40px 100px;
+        background-color: $bg-secondary;
+        &-container {
+            @include flex(row, flex-start, flex-start, 115px);
+            .footer-box {
+                @include flex(column, flex-start, flex-start, 25px);
+                &__text {
+                    @include WorkSans(16px, 400, 140%);
+                    color: $footer-text-color;
+                    width: 72%;
+                }
+                &__wrap {
+                    @include flex(column, flex-start, flex-start, 15px);
+                    &-text {
+                        @include WorkSans(16px, 400, 140%);
+                        color: $footer-text-color;  
+                    }
+                }
+                &__social {
+                    @include flex(row, center, center, 10px);
+                }
+                &__title {
+                    @include SpaceMono(22px, 700, 160%);
+                }
+                &__list {
+                    @include flex(column, flex-start, flex-start, 20px);
+                }
+                &__link {
+                    @include WorkSans(16px, 400, 140%);
+                    color: $footer-text-color;
+                    text-decoration: none;
+                }
+                &__label {
+                    @include flex(row, center, center, 0px);
+                    background-color: $text-color;
+                    border-radius: 20px;
+                    &-input {
+                        padding: 16px 20px;
+                        border-radius: 20px;
+                    }
+                    &-btn {
+                        @include flex(row, center, center, 12px);
+                        @include WorkSans(16px, 600, 140%);
+                        background-color: $button-color;
+                        padding: 16px 50px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+        &-container2 {
+            padding-top: 20px;
+            border-top: 1px solid $bg-color;
+            width: 100%;
+            &__text {
+                @include WorkSans(12px, 400, 110%);
+                color: $footer-text-color;
+            }
+        }
+    }
 }
