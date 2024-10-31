@@ -675,7 +675,26 @@ body .footer-container2__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
-    width: 60%;
+    width: 88%;
+  }
+  body .main .section1-container .section1-box__wallet1 {
+    text-decoration: none;
+  }
+  body .main .section1-container .section1-box__wallet1-text {
+    color: #FFFFFF;
+  }
+  body .main .section1-container .section1-box__wallet2 {
+    padding: 20px 62px;
+    text-decoration: none;
+  }
+  body .main .section1-container .section1-box__wallet2-text {
+    color: #FFFFFF;
+  }
+  body .main .section1-container .section1-box__wallet3 {
+    text-decoration: none;
+  }
+  body .main .section1-container .section1-box__wallet3-text {
+    color: #FFFFFF;
   }
   body .footer {
     padding: 20px 10px;

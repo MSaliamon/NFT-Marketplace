@@ -231,7 +231,28 @@ body {
                         }
                         &__text {
                             @include WorkSans(16px, 400, 160%);
-                            width: 60%;
+                            width: 88%;
+                        }
+                    }
+                    .section1-box {
+                        &__wallet1 {
+                            text-decoration: none;
+                            &-text {
+                                color: $text-color;
+                            }
+                        }
+                        &__wallet2 {
+                            padding: 20px 62px;
+                            text-decoration: none;
+                            &-text {
+                                color: $text-color;
+                            }
+                        }
+                        &__wallet3 {
+                            text-decoration: none;
+                            &-text {
+                                color: $text-color;
+                            }
                         }
                     }
                 }
