@@ -1,0 +1,260 @@
+@import './vars';
+@import './reset';
+@import './mixins';
+
+body {
+    color: $text-color;
+    background-color: $bg-color;
+    .header {
+        padding: 20px 50px;
+        @include flex(row, space-between, center, 0px);
+        .nav {
+            @include flex(row, center, center, 30px);
+            &__list {
+                @include flex(row, center, center, 30px);
+            }
+            &__link {
+                @include WorkSans(16px, 600, 140%);
+                color: $text-color;
+                text-decoration: none;
+            }
+            &__btn {
+                @include flex(row, center, center, 7px);
+                background-color: $button-color;
+                padding: 20px 30px;
+                border-radius: 20px;
+                &-link {
+                    @include WorkSans(16px, 600, 140%);
+                    color: $text-color;
+                    text-decoration: none;
+                }
+            }
+        }
+        &-burger {
+            display: none
+        }
+    }
+    .main {
+        .section1 {
+            @include flex(row, flex-start, flex-start, 60px);
+            &-container {
+                padding: 100px 0px;
+                @include flex(column, center, flex-start, 30px);
+                .section1-textbox {
+                    @include flex(column, flex-start, flex-start, 20px);
+                    &__title {
+                        @include WorkSans(51px, 600, 110%);
+                    }
+                    &__text {
+                        @include WorkSans(22px, 400, 160%);
+                        width: 80%;
+                    }
+                }
+                .section1-box {
+                    @include flex(column, flex-start, flex-start, 30px);
+                    &__wallet1 {
+                        @include flex(row, center, center, 20px);
+                        background-color: $bg-secondary;
+                        padding: 20px 100px;
+                        border-radius: 20px;
+                        border: 1px solid $button-color;
+                        &-text {
+                            @include WorkSans(22px, 600, 140%);
+                            width: 100%;
+                        }
+                    }
+                    &__wallet2 {
+                        @include flex(row, center, center, 20px);
+                        background-color: $bg-secondary;
+                        padding: 20px 75px;
+                        border-radius: 20px;
+                        border: 1px solid $button-color;
+                        &-text {
+                            @include WorkSans(22px, 600, 140%);
+                            width: 100%;
+                        }
+                    }
+                    &__wallet3 {
+                        @include flex(row, center, center, 20px);
+                        background-color: $bg-secondary;
+                        padding: 20px 107px;
+                        border-radius: 20px;
+                        border: 1px solid $button-color;
+                        &-text {
+                            @include WorkSans(22px, 600, 140%);
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        @include flex(column, flex-start, flex-start, 30px);
+        padding: 40px 100px;
+        background-color: $bg-secondary;
+        &-container {
+            @include flex(row, flex-start, flex-start, 115px);
+            .footer-box {
+                @include flex(column, flex-start, flex-start, 25px);
+                &__text {
+                    @include WorkSans(16px, 400, 140%);
+                    color: $footer-text-color;
+                    width: 72%;
+                }
+                &__wrap {
+                    @include flex(column, flex-start, flex-start, 15px);
+                    &-text {
+                        @include WorkSans(16px, 400, 140%);
+                        color: $footer-text-color;  
+                    }
+                }
+                &__social {
+                    @include flex(row, center, center, 10px);
+                }
+                &__title {
+                    @include SpaceMono(22px, 700, 160%);
+                }
+                &__list {
+                    @include flex(column, flex-start, flex-start, 20px);
+                }
+                &__link {
+                    @include WorkSans(16px, 400, 140%);
+                    color: $footer-text-color;
+                    text-decoration: none;
+                }
+                &__label {
+                    @include flex(row, center, center, 0px);
+                    background-color: $text-color;
+                    border-radius: 20px;
+                    &-input {
+                        padding: 16px 20px;
+                        border-radius: 20px;
+                        color: $bg-color;
+                    }
+                    &-btn {
+                        @include flex(row, center, center, 12px);
+                        @include WorkSans(16px, 600, 140%);
+                        background-color: $button-color;
+                        padding: 16px 50px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+        &-container2 {
+            padding-top: 20px;
+            border-top: 1px solid $bg-color;
+            width: 100%;
+            &__text {
+                @include WorkSans(12px, 400, 110%);
+                color: $footer-text-color;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1279px) and (min-width: 834px) {
+    body {
+        .header {
+            .nav {
+                display: none;
+            }
+            &-burger {
+                display: block;
+            }
+        }
+        .main {
+            .section1 {
+                @include flex(row, flex-start, center, 40px);
+                &__img {
+                    width: 53%;
+                }
+                &-container {
+                    padding: 80px 0px;
+                    .section1-textbox {
+                        &__title {
+                            @include WorkSans(38px, 600, 120%);
+                        }
+                        &__text {
+                            @include WorkSans(16px, 400, 160%);
+                            width: 100%;
+                        }
+                    }
+                    .section1-box {
+                        &__wallet1 {
+                            padding: 15px 45px;
+                        }
+                        &__wallet2 {
+                            padding: 15px 20px;
+                        }
+                        &__wallet3 {
+                            padding: 15px 55px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding: 80px 70px;
+            &-container {
+                @include flex(column, flex-start, flex-start, 30px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 833px) {
+    body {
+        .header {
+            padding: 20px 10px;
+            .nav {
+                display: none;
+            }
+            &-burger {
+                display: block;
+            }
+        }
+        .main {
+            .section1 {
+                @include flex(column, flex-start, center, 40px);
+                &__img {
+                    width: 100%;
+                }
+                &-container {
+                    padding: 80px 0px;
+                    @include flex(column, flex-start, center, 40px);
+                    .section1-textbox {
+                        @include flex(column, flex-start, center, 20px);
+                        &__title {
+                            @include WorkSans(38px, 600, 120%);
+                        }
+                        &__text {
+                            @include WorkSans(16px, 400, 160%);
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding: 20px 10px;
+            &-container {
+                @include flex(column, center, flex-start, 0px);
+                .footer-box {
+                    &__label {
+                        @include flex(column, center, center, 20px);
+                        background-color: $bg-secondary;
+                        &-input {
+                            background-color: $text-color;
+                            color: $bg-color;
+                        }
+                        &-btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
