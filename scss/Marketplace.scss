@@ -36,69 +36,103 @@ body {
     }
     .main {
         .section1 {
-            @include flex(row, flex-start, flex-start, 60px);
+            @include flex(column, center, flex-start, 0px);
+            width: 100%;
             &-container {
-                padding: 100px 0px;
                 @include flex(column, center, flex-start, 30px);
-                .section1-textbox {
-                    @include flex(column, flex-start, flex-start, 20px);
-                    &__title {
-                        @include WorkSans(51px, 600, 110%);
+                padding: 80px;
+                width: 100%;
+                &__textbox {
+                    @include flex(column, center, flex-start, 10px);
+                    &-title {
+                        @include WorkSans(51px, 500, 110%);
                     }
-                    &__text {
+                    &-text {
                         @include WorkSans(22px, 400, 160%);
-                        width: 80%;
                     }
                 }
+                &__label {
+                    @include flex(row, center, center, 0px);
+                    padding: 16px 20px;
+                    border-radius: 20px;
+                    width: 90%;
+                    border: 1px solid $bg-secondary;
+                    &-input {
+                        width: 100%;
+                    }
+                }
+            }
+            &-container2 {
+                @include flex(column, center, center, 0px);
+                width: 100%;
+                background-color: $bg-secondary;
                 .section1-box {
-                    @include flex(column, flex-start, flex-start, 30px);
-                    &__wallet1 {
-                        @include flex(row, center, center, 20px);
-                        background-color: $bg-secondary;
-                        padding: 20px 100px;
-                        border-radius: 20px;
-                        border: 1px solid $button-color;
-                        text-decoration: none;
-                        color: $text-color;
+                    @include flex(row, center, center, 30px);
+                    padding: 0px 100px;
+                    width: 100%;
+                    background-color: $bg-color;
+                    &__wrap {
+                        @include flex(row, center, center, 26px);
+                        width: 100%;
                         &-text {
                             @include WorkSans(22px, 600, 140%);
-                            width: 100%;
+                            color: $labal-color;
+                            text-decoration: none;
+                        }
+                        &-text:active {
+                            color: $text-color;
+                            .section1-box__wrap-count {
+                                background-color: $labal-color;
+                            }
+                        }
+                        &-count {
+                            padding: 5px 10px;
+                            border-radius: 20px;
+                            background-color: $bg-secondary;
+                            &-text {
+                                @include SpaceMono(16px, 400, 140%);
+                            }
                         }
                     }
-                    &__wallet1:visited {
-                        color: $text-color;
-                    }
-                    &__wallet2 {
-                        @include flex(row, center, center, 20px);
-                        background-color: $bg-secondary;
-                        padding: 20px 75px;
+                }
+                .section1-box2 {
+                    padding: 60px 0px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                    .section1-card {
+                        @include flex(column, center, flex-start, 0px);
+                        background-color: $bg-color;
                         border-radius: 20px;
-                        border: 1px solid $button-color;
-                        text-decoration: none;
-                        color: $text-color;
-                        &-text {
-                            @include WorkSans(22px, 600, 140%);
-                            width: 100%;
+                        &__wrap {
+                            @include flex(column, center, flex-start, 27px);
+                            padding: 20px 30px;
                         }
-                    }
-                    &__wallet2:visited {
-                        color: $text-color;
-                    }
-                    &__wallet3 {
-                        @include flex(row, center, center, 20px);
-                        background-color: $bg-secondary;
-                        padding: 20px 107px;
-                        border-radius: 20px;
-                        border: 1px solid $button-color;
-                        text-decoration: none;
-                        color: $text-color;
-                        &-text {
-                            @include WorkSans(22px, 600, 140%);
-                            width: 100%;
+                        &__textbox {
+                            @include flex(column, center, flex-start, 0px);
+                            &-name {
+                                @include WorkSans(22px, 600, 140%);
+                            }
+                            &-avatar {
+                                @include flex(row, center, center, 12px);
+                                &-text {
+                                    @include SpaceMono(16px, 400, 140%);
+                                }
+                            }
                         }
-                    }
-                    &__wallet3:visited {
-                        color: $text-color;
+                        &__price {
+                            @include flex(row, space-between, center, 100px);
+                            &-cont {
+                                @include flex(column, center, flex-start, 8px);
+                                &-text1 {
+                                    @include SpaceMono(12px, 400, 110%);
+                                    color: $labal-color
+                                }
+                                &-text2 {
+                                    @include SpaceMono(16px, 400, 140%);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -106,6 +140,7 @@ body {
     }
     .footer {
         @include flex(column, flex-start, flex-start, 30px);
+        border-top : 2px solid $bg-color;
         padding: 40px 100px;
         background-color: $bg-secondary;
         &-container {
@@ -167,7 +202,6 @@ body {
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 1279px) and (min-width: 834px) {
@@ -181,35 +215,7 @@ body {
             }
         }
         .main {
-            .section1 {
-                @include flex(row, flex-start, center, 40px);
-                &__img {
-                    width: 53%;
-                }
-                &-container {
-                    padding: 80px 0px;
-                    .section1-textbox {
-                        &__title {
-                            @include WorkSans(38px, 600, 120%);
-                        }
-                        &__text {
-                            @include WorkSans(16px, 400, 160%);
-                            width: 100%;
-                        }
-                    }
-                    .section1-box {
-                        &__wallet1 {
-                            padding: 15px 45px;
-                        }
-                        &__wallet2 {
-                            padding: 15px 20px;
-                        }
-                        &__wallet3 {
-                            padding: 15px 55px;
-                        }
-                    }
-                }
-            }
+            
         }
         .footer {
             padding: 80px 70px;
@@ -231,47 +237,7 @@ body {
             }
         }
         .main {
-            .section1 {
-                @include flex(column, flex-start, center, 40px);
-                &__img {
-                    width: 100%;
-                }
-                &-container {
-                    padding: 80px 0px;
-                    @include flex(column, flex-start, center, 40px);
-                    .section1-textbox {
-                        @include flex(column, flex-start, center, 20px);
-                        &__title {
-                            @include WorkSans(38px, 600, 120%);
-                        }
-                        &__text {
-                            @include WorkSans(16px, 400, 160%);
-                            width: 88%;
-                        }
-                    }
-                    .section1-box {
-                        &__wallet1 {
-                            text-decoration: none;
-                            &-text {
-                                color: $text-color;
-                            }
-                        }
-                        &__wallet2 {
-                            padding: 20px 62px;
-                            text-decoration: none;
-                            &-text {
-                                color: $text-color;
-                            }
-                        }
-                        &__wallet3 {
-                            text-decoration: none;
-                            &-text {
-                                color: $text-color;
-                            }
-                        }
-                    }
-                }
-            }
+            
         }
         .footer {
             padding: 20px 10px;
