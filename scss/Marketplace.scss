@@ -215,7 +215,12 @@ body {
             }
         }
         .main {
-            
+            .section1 {
+                .section1-box2 {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
         }
         .footer {
             padding: 80px 70px;
@@ -237,7 +242,13 @@ body {
             }
         }
         .main {
-            
+            .section1 {
+                padding: 80px 30px;
+                .section1-box2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
         }
         .footer {
             padding: 20px 10px;

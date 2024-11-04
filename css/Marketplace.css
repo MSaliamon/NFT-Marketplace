@@ -675,6 +675,10 @@ body .footer-container2__text {
   body .header-burger {
     display: block;
   }
+  body .main .section1 .section1-box2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   body .footer {
     padding: 80px 70px;
   }
@@ -704,6 +708,16 @@ body .footer-container2__text {
   }
   body .header-burger {
     display: block;
+  }
+  body .main .section1 {
+    padding: 80px 30px;
+  }
+  body .main .section1 .section1-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   body .footer {
     padding: 20px 10px;
