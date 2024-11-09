@@ -236,3 +236,93 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 833px) {
+    body {
+        .header {
+            padding: 20px 10px;
+            .nav {
+                display: none;
+            }
+            &-burger {
+                display: block;
+            }
+        }
+        .main {
+            .section1 {
+                padding: 80px 30px;
+                &-textbox {
+                    &__title {
+                        @include WorkSans(28px, 600, 140%);
+                    }
+                    &__text {
+                        @include WorkSans(16px, 400, 140%);
+                    }
+                }
+                &-container {
+                    .section1-box {
+                        &__list {
+                            @include flex(row, flex-start, center, 10px);
+                        }
+                        &__link {
+                            @include WorkSans(15px, 400, 140%);
+                        }
+                    }
+                    .section1-box2 {
+                        // @include flex(column, center, center, 40px);
+                        gap: 40px;
+                        &__cont2 {
+                            &-text {
+                                @include WorkSans(16px, 400, 140%);
+                                &--mobile-none {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .section1-box3 {
+                        &__cont {
+                            .section1-box3__avatar {
+                                &-number {
+                                    display: none;
+                                }
+                                &-info {
+                                    &-name {
+                                        @include WorkSans(12px, 400, 140%);
+                                    }
+                                }
+                            }
+                        }
+                        &__number {
+                              &-percent {
+                                  display: none;
+                              }
+                              &-sold {
+                                  display: none;
+                              }      
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding: 20px 10px;
+            &-container {
+                @include flex(column, center, flex-start, 0px);
+                .footer-box {
+                    &__label {
+                        @include flex(column, center, center, 20px);
+                        background-color: $bg-secondary;
+                        &-input {
+                            background-color: $text-color;
+                            color: $bg-color;
+                        }
+                        &-btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
