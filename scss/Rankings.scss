@@ -62,7 +62,7 @@ body {
                     }
                 }
                 .section1-box2 {
-                    @include flex(row, center, center, 400px);
+                    @include flex(row, center, center, 382px);
                     border-radius: 20px;
                     border: 1px solid $bg-secondary;
                     padding: 20px 45px;
@@ -89,7 +89,7 @@ body {
                     @include flex(column, center, center, 20px);
                     width: 100%;
                     &__cont {
-                        @include flex(row, center, center, 60px);
+                        @include flex(row, center, center, 0px);
                         width: 100%;
                         border-radius: 20px;
                         background-color: $bg-secondary;
@@ -116,8 +116,9 @@ body {
                             }
                         }
                         .section1-box3__number {
-                            @include flex(row, center, center, 20px);
+                            @include flex(row, center, center, 133px);
                             width: 100%;
+                            margin-right: 128px;
                             &-percent {
                                 @include SpaceMono(16px, 400, 140%);
                                 color: $percent-color;
@@ -224,6 +225,9 @@ body {
                                 }
                             }
                         }
+                        .section1-box3__number {
+                            margin-right: 0px;
+                        }
                     }
                 }
             }
@@ -294,6 +298,7 @@ body {
                             }
                         }
                         &__number {
+                            margin-right: 0px;
                               &-percent {
                                   display: none;
                               }

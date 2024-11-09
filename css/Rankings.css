@@ -286,7 +286,7 @@ body .main .section1-container .section1-box2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 400px;
+  gap: 382px;
   border-radius: 20px;
   border: 1px solid #3B3B3B;
   padding: 20px 45px;
@@ -372,7 +372,7 @@ body .main .section1-container .section1-box3__cont {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 0px;
   width: 100%;
   border-radius: 20px;
   background-color: #3B3B3B;
@@ -445,8 +445,9 @@ body .main .section1-container .section1-box3__cont .section1-box3__number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 133px;
   width: 100%;
+  margin-right: 128px;
 }
 body .main .section1-container .section1-box3__cont .section1-box3__number-percent {
   font-family: "Space Mono", sans-serif;
@@ -685,6 +686,9 @@ body .footer-container2__text {
     font-weight: 600;
     line-height: 140%;
   }
+  body .main .section1 .section1-box3__cont .section1-box3__number {
+    margin-right: 0px;
+  }
   body .footer {
     padding: 80px 70px;
   }
@@ -772,6 +776,9 @@ body .footer-container2__text {
     font-size: 12px;
     font-weight: 400;
     line-height: 140%;
+  }
+  body .main .section1-container .section1-box3__number {
+    margin-right: 0px;
   }
   body .main .section1-container .section1-box3__number-percent {
     display: none;
