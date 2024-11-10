@@ -463,13 +463,74 @@ body {
 @media screen and (max-width: 1279px) and (min-width: 834px) {
     body {
         .header {
-            .nav {
+            @include flex(row, space-around, center, 350px);
+            .header-burger {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+              
+              .header-burger__img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+              }
+              
+              .header-burger__img.krest {
+                content: url("../img/png/krest.png");
+                width: 35px;
+                height: 35px;
+              }
+              
+              .nav {
                 display: none;
-            }
-            &-burger {
-                display: block;
-            }
+              }
+              
+              .nav.open {
+                display: flex;
+                flex-direction: column;
+              }
+              .nav__list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 100px;
+                right: 500px; /* adjust this value to position the menu to the left of the krest icon */
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              
+              .nav__item {
+                margin-bottom: 10px;
+              }
+              
+              .nav__link {
+                text-decoration: none;
+              }
+              
+              .nav__btn {
+                position: absolute;
+                top: 300px;
+                right: 500px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+              }
+              
+              .nav__btn-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+              }
         }
+        .backround {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+          }
         .main {
             .section1 {
                 padding: 80px 70px;
@@ -645,19 +706,82 @@ body {
 @media screen and (max-width: 833px) { 
     body {
         .header {
-            padding: 20px 10px;
-            .nav {
+            @include flex(row, space-around, center, 0px);
+            .header-burger {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+              
+              .header-burger__img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+              }
+              
+              .header-burger__img.krest {
+                content: url("../img/png/krest.png");
+                width: 35px;
+                height: 35px;
+              }
+              
+              .nav {
                 display: none;
-            }
-            &-burger {
-                display: block;
-            }
+              }
+              
+              .nav.open {
+                display: flex;
+                flex-direction: column;
+              }
+              .nav__list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 100px;
+                right: 300px; /* adjust this value to position the menu to the left of the krest icon */
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              
+              .nav__item {
+                margin-bottom: 10px;
+              }
+              
+              .nav__link {
+                text-decoration: none;
+              }
+              
+              .nav__btn {
+                position: absolute;
+                top: 300px;
+                right: 300px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+              }
+              
+              .nav__btn-img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+              }
         }
+        .backround {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+          }
         .main {
+            @include flex(column, flex-start, center, 0px);
             .section1 {
                 position: relative;
                 padding: 20px 10px;
+                @include flex(column, flex-start, center, 0px);
                 &-container1 {
+                    @include flex(column, flex-start, center, 20px);
                     width: 100%;
                     &__textbox {
                         margin-bottom: 395px;
@@ -678,6 +802,9 @@ body {
                             }
                         }
                     }
+                    &__btn {
+                        margin-top: 200px;
+                    }
                 }
                 &-container2 {
                     position: absolute;
@@ -685,6 +812,7 @@ body {
                 }
             }
             .section2 {
+                @include flex(column, flex-start, center, 0px);
                 padding: 20px 10px;
                 &-textbox {
                     &__title {
@@ -705,6 +833,9 @@ body {
             .section3 {
                 position: relative;
                 padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 &-container1 {
                     @include flex(row, center, flex-end, 0px);
                     .section3-textbox {
@@ -719,7 +850,7 @@ body {
                         position: absolute;
                         top: 1120px;
                         @include WorkSans(16px, 600, 140%);
-                        width: 100%;
+                        width: 66%;
                     }
                 }
                 &-container2 {
@@ -747,6 +878,7 @@ body {
                 }
             }
             .section4 {
+                @include flex(column, flex-start, center, 0px);
                 padding: 20px 10px;
                 margin-top: 60px;
                 &__title {
@@ -780,8 +912,8 @@ body {
                     }
                     &__btn {
                         position: absolute;
-                        top: 1566px;
-                        width: 90%;
+                        top: 1570px;
+                        width: 59%;
                     }
                 }
                 &-container2 {
@@ -790,6 +922,7 @@ body {
                 }
             }
             .section6 {
+                @include flex(column, flex-start, center, 0px);
                 margin-top: 60px;
                 padding: 20px 10px;
                 &-textbox {
@@ -866,5 +999,4 @@ body {
             }
         }
     }
-    
 }

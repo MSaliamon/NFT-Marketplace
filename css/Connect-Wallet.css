@@ -547,11 +547,95 @@ body .footer-container2__text {
 }
 
 @media screen and (max-width: 1279px) and (min-width: 834px) {
+  body .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 350px;
+  }
+  body .header .header-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header .header-burger__img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  body .header .header-burger__img.krest {
+    content: url("../img/png/krest.png");
+    width: 35px;
+    height: 35px;
+  }
   body .header .nav {
     display: none;
   }
-  body .header-burger {
-    display: block;
+  body .header .nav.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .header .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    right: 500px; /* adjust this value to position the menu to the left of the krest icon */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .header .nav__item {
+    margin-bottom: 10px;
+  }
+  body .header .nav__link {
+    text-decoration: none;
+  }
+  body .header .nav__btn {
+    position: absolute;
+    top: 300px;
+    right: 500px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .header .nav__btn-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  body .backround {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
   }
   body .main .section1 {
     display: -webkit-box;
@@ -619,13 +703,94 @@ body .footer-container2__text {
 }
 @media screen and (max-width: 833px) {
   body .header {
-    padding: 20px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0px;
+  }
+  body .header .header-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header .header-burger__img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  body .header .header-burger__img.krest {
+    content: url("../img/png/krest.png");
+    width: 35px;
+    height: 35px;
   }
   body .header .nav {
     display: none;
   }
-  body .header-burger {
-    display: block;
+  body .header .nav.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .header .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    right: 300px; /* adjust this value to position the menu to the left of the krest icon */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .header .nav__item {
+    margin-bottom: 10px;
+  }
+  body .header .nav__link {
+    text-decoration: none;
+  }
+  body .header .nav__btn {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .header .nav__btn-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  body .backround {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
   }
   body .main .section1 {
     display: -webkit-box;
@@ -699,7 +864,7 @@ body .footer-container2__text {
     color: #FFFFFF;
   }
   body .main .section1-container .section1-box__wallet2 {
-    padding: 20px 62px;
+    padding: 20px 74px;
     text-decoration: none;
   }
   body .main .section1-container .section1-box__wallet2-text {
