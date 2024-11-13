@@ -24,35 +24,30 @@ InputText.addEventListener("input", (e) => {
 });
 
 
-// Отримуємо посилання на елементи
 const nftsLink = document.getElementById('nftsLink');
 const collectionsLink = document.getElementById('collectionsLink');
 const cardContainer = document.getElementById('cardContainer');
 
-// Зберігаємо початковий порядок карток
 const originalOrder = Array.from(cardContainer.children);
 
-// Клік на "NFTs" — повертаємо оригінальний порядок карток
 nftsLink.addEventListener('click', (event) => {
     event.preventDefault();
     restoreOriginalOrder();
 });
 
-// Клік на "Collections" — змінюємо порядок карток на зворотній
 collectionsLink.addEventListener('click', (event) => {
     event.preventDefault();
     reverseCardOrder();
 });
 
-// Функція для відновлення оригінального порядку
+
 function restoreOriginalOrder() {
-    cardContainer.innerHTML = ''; // Очищаємо контейнер
-    originalOrder.forEach(card => cardContainer.appendChild(card)); // Додаємо картки в оригінальному порядку
+    cardContainer.innerHTML = ''; 
+    originalOrder.forEach(card => cardContainer.appendChild(card));
 }
 
-// Функція для зворотного порядку карток
 function reverseCardOrder() {
-    const cards = Array.from(cardContainer.children); // Отримуємо всі картки як масив
-    cardContainer.innerHTML = ''; // Очищаємо контейнер
-    cards.reverse().forEach(card => cardContainer.appendChild(card)); // Додаємо картки у зворотному порядку
+    const cards = Array.from(cardContainer.children);
+    cardContainer.innerHTML = '';
+    cards.reverse().forEach(card => cardContainer.appendChild(card));
 }
