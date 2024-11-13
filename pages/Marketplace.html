@@ -37,31 +37,31 @@
                     <p class="section1-container__textbox-text">Browse through more than 50k NFTs on the NFT Marketplace.</p>
                 </div>
                 <label class="section1-container__label">
-                    <input type="text" class="section1-container__label-input"><button class="section1-container__label-btn"><img src="../img/svg/MagnifyingGlass.svg" alt="MagnifyingGlass" class="section1-container__label-btn-img"></button>
+                    <input type="text" class="section1-container__label-input" id="search-input"><button class="section1-container__label-btn" id="search-btn"><img src="../img/svg/MagnifyingGlass.svg" alt="MagnifyingGlass" class="section1-container__label-btn-img"></button>
                 </label>
             </div>
             <div class="section1-container2">
                 <div class="section1-box">
                     <div class="section1-box__wrap">
-                        <a href="" class="section1-box__wrap-text">NFTs</a>
+                        <a href="" id="nftsLink" class="section1-box__wrap-text">NFTs</a>
                         <div class="section1-box__wrap-count">
                             <p class="section1-box__wrap-count-text">302</p>
                         </div>
                     </div>
                     <div class="section1-box__wrap">
-                        <a href="" class="section1-box__wrap-text">Collections</a>
+                        <a href=""  id="collectionsLink" class="section1-box__wrap-text">Collections</a>
                         <div class="section1-box__wrap-count">
                             <p class="section1-box__wrap-count-text">302</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="section1-box2">
+                <div class="section1-box2" id="cardContainer">
                     <div class="section1-card">
                         <img src="../img/png/Image Placeholder.png" alt="Mushrooms" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Magic Mushrooms 0325</p>
+                                <p class="section1-card__textbox-name search-text">Magic Mushrooms 0325</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar mushroom.png" alt="Shroomie" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Shroomie</p>
@@ -83,7 +83,7 @@
                         <img src="../img/png/Image Placeholder (1).png" alt="Robot" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Happy Robot 032</p>
+                                <p class="section1-card__textbox-name search-text">Happy Robot 032</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar robot.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">BeKind2Robots</p>
@@ -105,7 +105,7 @@
                         <img src="../img/png/Image Placeholder (2).png" alt="Robot2" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Happy Robot 024</p>
+                                <p class="section1-card__textbox-name search-text">Happy Robot 024</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar robot.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">BeKind2Robots</p>
@@ -127,7 +127,7 @@
                         <img src="../img/png/Image Placeholder (3).png" alt="Bear" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Designer Bear</p>
+                                <p class="section1-card__textbox-name search-text">Designer Bear</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar nft animal.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Mr Fox</p>
@@ -149,7 +149,7 @@
                         <img src="../img/png/Image Placeholder (4).png" alt="Dog" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Colorful Dog 0356</p>
+                                <p class="section1-card__textbox-name search-text">Colorful Dog 0356</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Kepitreal.png" alt="Kepitreal" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Keepitreal</p>
@@ -171,7 +171,7 @@
                         <img src="../img/png/Image Placeholder (5).png" alt="Robot3" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Dancing Robot 0312</p>
+                                <p class="section1-card__textbox-name search-text">Dancing Robot 0312</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Robot2.png" alt="Robot2" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Robotica</p>
@@ -193,7 +193,7 @@
                         <img src="../img/png/Image Placeholder (6).png" alt="Women" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Cherry Blossom Girl 035</p>
+                                <p class="section1-card__textbox-name search-text">Cherry Blossom Girl 035</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar MoonDancer.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">MoonDancer</p>
@@ -215,7 +215,7 @@
                         <img src="../img/png/Image Placeholder (7).png" alt="Space Travel" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Space Travel</p>
+                                <p class="section1-card__textbox-name search-text">Space Travel</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Nebula.png" alt="Nebula" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">NebulaKid</p>
@@ -237,7 +237,7 @@
                         <img src="../img/png/Image Placeholder (8).png" alt="Sunset Dimension" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Sunset Dimension</p>
+                                <p class="section1-card__textbox-name search-text">Sunset Dimension</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Placeholder.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">AnimaKid</p>
@@ -259,7 +259,7 @@
                         <img src="../img/png/Image Placeholder (9).png" alt="Desert Walk" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Desert Walk</p>
+                                <p class="section1-card__textbox-name search-text">Desert Walk</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Placeholder.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Catch 22</p>
@@ -281,7 +281,7 @@
                         <img src="../img/png/Image Placeholder (10).png" alt="Monkey" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">IceCream Ape 0324</p>
+                                <p class="section1-card__textbox-name search-text">IceCream Ape 0324</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Placeholder.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">Ice App Club</p>
@@ -303,7 +303,7 @@
                         <img src="../img/png/Image Placeholder (11).png" alt="Dog" class="section1-card__img">
                         <div class="section1-card__wrap">
                             <div class="section1-card__textbox">
-                                <p class="section1-card__textbox-name">Colorful Dog 0344</p>
+                                <p class="section1-card__textbox-name search-text">Colorful Dog 0344</p>
                                 <div class="section1-card__textbox-avatar">
                                     <img src="../img/png/Avatar Placeholder.png" alt="Avatar" class="section1-card__textbox-avatar-img">
                                     <p class="section1-card__textbox-avatar-text">PuppyPower</p>
@@ -361,5 +361,6 @@
         </div>
     </footer>
     <script src="../js/burger.js"></script>
+    <script src="../js/Marketplace.js"></script>
 </body>
 </html>

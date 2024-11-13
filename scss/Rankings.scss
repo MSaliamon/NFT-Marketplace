@@ -389,8 +389,7 @@ body {
                         }
                     }
                     .section1-box2 {
-                        // @include flex(column, center, center, 40px);
-                        gap: 40px;
+                        gap: 257px;
                         &__cont2 {
                             &-text {
                                 @include WorkSans(16px, 400, 140%);
