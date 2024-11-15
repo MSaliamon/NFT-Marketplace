@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Wallet</title>
+    <title>Sign up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Connect-Wallet.css">
+    <link rel="stylesheet" href="../css/Sign-up.css">
 </head>
 <body>
     <header class="header">
@@ -19,7 +19,7 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="./Marketplace.html" class="nav__link">Marketplace</a></li>
                 <li class="nav__item"><a href="./Rankings.html" class="nav__link">Rankings</a></li>
-                <li class="nav__item"><a href="../pages/Connect-Wallet.html" class="nav__link">Connect a wallet</a></li>
+                <li class="nav__item"><a href="./Connect-Wallet.html" class="nav__link">Connect a wallet</a></li>
             </ul>
             <button class="nav__btn">
                 <img src="../img/svg/User.svg" alt="user" class="nav__btn-img"><a href="./Sign-up.html" class="nav__btn-link">Sign Up</a>
@@ -31,26 +31,35 @@
     </header>
     <main class="main">
         <section class="section1">
-            <img src="../img/png/Image Cosmo fly.png" alt="Connect-Wallet" class="section1__img">
+            <img src="../img/png/cosmo-roket.png" alt="cosmo-roket" class="section1__img">
             <div class="section1-container">
-                <div class="section1-textbox">
-                    <h1 class="section1-textbox__title">Connect a wallet</h1>
-                    <p class="section1-textbox__text">Choose a wallet you want to connect. There are several wallet providers.</p>
+                <div class="section1-container__textbox">
+                    <h1 class="section1-container__textbox-title">Create account</h1>
+                    <p class="section1-container__textbox-text">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
                 </div>
-                <div class="section1-box">
-                    <a href="https://metamask.io/" class="section1-box__wallet1">
-                        <img src="../img/svg/Metamask.svg" alt="Metamask" class="section1-box__wallet1-img">
-                        <p class="section1-box__wallet1-text">Metamask</p>
-                    </a>
-                    <a href="https://walletconnect.network/" class="section1-box__wallet2">
-                        <img src="../img/svg/WalletConnect.svg" alt="WalletConnect" class="section1-box__wallet2-img">
-                        <p class="section1-box__wallet2-text">Wallet Connect</p>
-                    </a>
-                    <a href="https://www.coinbase.com/pl/" class="section1-box__wallet3">
-                        <img src="../img/svg/Coinbase.svg" alt="Coinbase" class="section1-box__wallet3-img">
-                        <p class="section1-box__wallet3-text">Coinbase</p>
-                    </a>
-                </div>
+                <form action="" class="section1-form" id="form">
+                    <div class="section1-form__wrap">
+                        <label class="section1-form__label">
+                            <img src="../img/svg/User2.svg" alt="User" class="section1-form__label-img">
+                            <input type="text" class="section1-form__label-input" placeholder="Name" id="name">
+                            <span class="error" id="nameError"></span>
+                        </label>
+                        <label class="section1-form__label">
+                            <img src="../img/svg/EnvelopeSimple2.svg" alt="EnvelopeSimple" class="section1-form__label-img">
+                            <input type="email" class="section1-form__label-input" placeholder="Email" id="email">
+                            <span class="error" id="emailError"></span>
+                        </label>
+                        <label class="section1-form__label">
+                            <img src="../img/svg/LockKey.svg" alt="LockKey" class="section1-form__label-img">
+                            <input type="password" class="section1-form__label-input" placeholder="Password" id="password">
+                        </label>
+                        <label class="section1-form__label">
+                            <img src="../img/svg/LockKey.svg" alt="LockKey" class="section1-form__label-img">
+                            <input type="password" class="section1-form__label-input" placeholder="Confirm Password">
+                        </label>
+                    </div>
+                    <button class="section1-form__btn">Create Account</button>
+                </form>
             </div>
         </section>
     </main>
@@ -74,9 +83,9 @@
             <div class="footer-box">
                 <p class="footer-box__title">Explore</p>
                 <ul class="footer-box__list">
-                    <li class="footer-box__item"><a href="" class="footer-box__link">Marketplace</a></li>
-                    <li class="footer-box__item"><a href="" class="footer-box__link">Rankings</a></li>
-                    <li class="footer-box__item"><a href="" class="footer-box__link">Connect a wallet</a></li>
+                    <li class="footer-box__item"><a href="./pages/Marketplace.html" class="footer-box__link">Marketplace</a></li>
+                    <li class="footer-box__item"><a href="./pages/Rankings.html" class="footer-box__link">Rankings</a></li>
+                    <li class="footer-box__item"><a href="./pages/Connect-Wallet.html" class="footer-box__link">Connect a wallet</a></li>
                 </ul>
             </div>
             <div class="footer-box">
@@ -90,5 +99,6 @@
         </div>
     </footer>
     <script src="../js/burger.js"></script>
+    <script src="../js/sign-up.js"></script>
 </body>
 </html>

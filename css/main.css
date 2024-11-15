@@ -1836,7 +1836,7 @@ body .footer-container2__text {
     margin: 0;
     position: absolute;
     top: 100px;
-    right: 300px; /* adjust this value to position the menu to the left of the krest icon */
+    right: 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1854,7 +1854,7 @@ body .footer-container2__text {
   body .header .nav__btn {
     position: absolute;
     top: 300px;
-    right: 300px;
+    right: 120px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -1950,7 +1950,7 @@ body .footer-container2__text {
     line-height: 140%;
   }
   body .main .section1-container1__btn {
-    margin-top: 200px;
+    margin-top: 20px;
   }
   body .main .section1-container2 {
     position: absolute;
@@ -2037,7 +2037,7 @@ body .footer-container2__text {
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
-    width: 66%;
+    width: 73%;
   }
   body .main .section3-container2 {
     display: -webkit-box;

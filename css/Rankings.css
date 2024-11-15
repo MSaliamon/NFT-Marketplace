@@ -849,7 +849,7 @@ body .footer-container2__text {
     margin: 0;
     position: absolute;
     top: 100px;
-    right: 300px; /* adjust this value to position the menu to the left of the krest icon */
+    right: 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -867,7 +867,7 @@ body .footer-container2__text {
   body .header .nav__btn {
     position: absolute;
     top: 300px;
-    right: 300px;
+    right: 120px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -878,6 +878,11 @@ body .footer-container2__text {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+  body .backround {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
   }
   body .main .section1 {
     padding: 80px 30px;
@@ -917,7 +922,7 @@ body .footer-container2__text {
     line-height: 140%;
   }
   body .main .section1-container .section1-box2 {
-    gap: 257px;
+    gap: 68px;
   }
   body .main .section1-container .section1-box2__cont2-text {
     font-family: "Work Sans", sans-serif;
@@ -927,6 +932,9 @@ body .footer-container2__text {
   }
   body .main .section1-container .section1-box2__cont2-text--mobile-none {
     display: none;
+  }
+  body .main .section1-container .section1-box3__cont .section1-box3__number {
+    margin-right: 0px;
   }
   body .main .section1-container .section1-box3__cont .section1-box3__avatar-number {
     display: none;

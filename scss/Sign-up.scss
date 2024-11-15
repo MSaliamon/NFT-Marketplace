@@ -36,100 +36,43 @@ body {
     }
     .main {
         .section1 {
-            padding: 80px 115px;
-            @include flex(column, flex-start, center, 80px);
-            &-textbox {
-                @include flex(column, flex-start, flex-start, 20px);
-                &__title {
-                    @include WorkSans(51px, 600, 110%);
-                }
-                &__text {
-                    @include WorkSans(22px, 400, 160%);
-                }
-            }
+            @include flex(row, flex-start, center, 60px);
             &-container {
-                @include flex(column, center, center, 20px);
-                width: 100%;
-                .section1-box {
-                    &__list {
-                        @include flex(row, flex-start, center, 100px);
+                @include flex(column, flex-start, flex-start, 40px);
+                &__textbox {
+                    @include flex(column, flex-start, flex-start, 20px);
+                    &-title {
+                        @include WorkSans(51px, 600, 110%);
+                        text-transform: capitalize;
                     }
-                    &__link {
-                        @include WorkSans(22px, 600, 140%);
-                        color: $text-color;
-                        text-decoration: none;
-                        
-                    }
-                }
-                .section1-box2 {
-                    @include flex(row, center, center, 382px);
-                    border-radius: 20px;
-                    border: 1px solid $bg-secondary;
-                    padding: 20px 45px;
-                    width: 100%;
-                    &__cont {
-                        @include flex(row, flex-start, flex-start, 20px);
-                        &-text {
-                            @include SpaceMono(16px, 400, 140%);
-                            color: $labal-color;
-                            width: 100%;
-                        }
-                    }
-                    &__cont2 {
-                        @include flex(row, flex-start, flex-start, 20px);
-                        width: 100%;
-                        &-text {
-                            @include SpaceMono(16px, 400, 140%);
-                            color: $labal-color;
-                            width: 100%;
-                        }
+                    &-text {
+                        @include WorkSans(22px, 400, 160%);
+                        width: 70%;
                     }
                 }
-                .section1-box3 {
-                    @include flex(column, center, center, 20px);
+                .section1-form {
+                    @include flex(column, flex-start, flex-start, 30px);
                     width: 100%;
-                    &__cont {
-                        @include flex(row, center, center, 0px);
+                    &__wrap {
+                        @include flex(column, flex-start, flex-start, 15px);
                         width: 100%;
+                        .section1-form__label {
+                            @include flex(row, flex-start, center, 12px);
+                            padding: 20px 16px;
+                            background-color: $text-color;
+                            border-radius: 20px;
+                            width: 50%;
+                            &-input {
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                    &__btn {
+                        @include flex(row, center, center, 7px);
+                        background-color: $button-color;
+                        padding: 12px 30px;
+                        width: 50%;
                         border-radius: 20px;
-                        background-color: $bg-secondary;
-                        padding: 12px 20px;
-                        .section1-box3__avatar {
-                            @include flex(row, center, center, 15px);
-                            width: 100%;
-                            &-number {
-                                padding: 5px 10px;
-                                background-color: $bg-color;
-                                border-radius: 20px;
-                                &-text {
-                                    @include SpaceMono(16px, 400, 140%);
-                                    color: $labal-color;
-                                }
-                            }
-                            &-info {
-                                @include flex(row, flex-start, center, 20px);
-                                width: 100%;
-                                &-name {
-                                    @include WorkSans(22px, 600, 140%);
-                                    width: 100%;
-                                }
-                            }
-                        }
-                        .section1-box3__number {
-                            @include flex(row, center, center, 133px);
-                            width: 100%;
-                            margin-right: 128px;
-                            &-percent {
-                                @include SpaceMono(16px, 400, 140%);
-                                color: $percent-color;
-                            }
-                            &-sold {
-                                @include SpaceMono(16px, 400, 140%);
-                            }
-                            &-volume {
-                                @include SpaceMono(16px, 400, 140%);
-                            }
-                        }
                     }
                 }
             }
@@ -271,29 +214,14 @@ body {
             background-color: rgba(0, 0, 0, 0.8);
             z-index: 1;
           }
-        .main {
+          .main {
             .section1 {
-                padding: 80px 0px;
-                .section1-box2 {
-                    @include flex(row, center, center, 320px);
-                }
-                .section1-box3 {
-                    &__cont {
-                        .section1-box3__avatar {
-                            &-info {
-                                &-name {
-                                    @include WorkSans(18px, 600, 140%);
-                                }
-                            }
-                        }
-                        .section1-box3__number {
-                            margin-right: 0px;
-                        }
-                    }
+                &__img {
+                    width: 38%;
                 }
             }
-        }
-        .footer {
+          }
+          .footer {
             padding: 80px 70px;
             &-container {
                 @include flex(column, flex-start, flex-start, 30px);
@@ -373,67 +301,34 @@ body {
             background-color: rgba(0, 0, 0, 0.8);
             z-index: 1;
           }
-        .main {
+          .main {
             .section1 {
-                padding: 80px 30px;
-                &-textbox {
-                    &__title {
-                        @include WorkSans(28px, 600, 140%);
-                    }
-                    &__text {
-                        @include WorkSans(16px, 400, 140%);
-                    }
-                }
+                @include flex(column, flex-start, flex-start, 30px);
                 &-container {
-                    .section1-box {
-                        &__list {
-                            @include flex(row, flex-start, center, 10px);
+                    &__textbox {
+                        &-title {
+                            @include WorkSans(38px, 600, 120%);
                         }
-                        &__link {
-                            @include WorkSans(15px, 400, 140%);
-                        }
-                    }
-                    .section1-box2 {
-                        gap: 68px;
-                        &__cont2 {
-                            &-text {
-                                @include WorkSans(16px, 400, 140%);
-                                &--mobile-none {
-                                    display: none;
-                                }
-                            }
+                        &-text {
+                            @include WorkSans(16px, 400, 140%);
+                            width: 100%;
                         }
                     }
-                    .section1-box3 {
-                        &__cont {
-                            .section1-box3__number {
-                                margin-right: 0px;
+                    .section1-form {
+                        width: 100%;
+                        &__wrap {
+                            .section1-form__label {
+                                width: 100%;
                             }
-                            .section1-box3__avatar {
-                                &-number {
-                                    display: none;
-                                }
-                                &-info {
-                                    &-name {
-                                        @include WorkSans(12px, 400, 140%);
-                                    }
-                                }
-                            }
-                        }
-                        &__number {
-                            margin-right: 0px;
-                              &-percent {
-                                  display: none;
-                              }
-                              &-sold {
-                                  display: none;
-                              }      
+                        } 
+                        &__btn {
+                            width: 100%;
                         }
                     }
                 }
             }
-        }
-        .footer {
+          }
+          .footer {
             padding: 20px 10px;
             &-container {
                 @include flex(column, center, flex-start, 0px);

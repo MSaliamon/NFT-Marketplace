@@ -739,7 +739,7 @@ body {
                 margin: 0;
                 position: absolute;
                 top: 100px;
-                right: 300px; /* adjust this value to position the menu to the left of the krest icon */
+                right: 120px;
                 flex-direction: column;
                 align-items: flex-start;
               }
@@ -755,7 +755,7 @@ body {
               .nav__btn {
                 position: absolute;
                 top: 300px;
-                right: 300px;
+                right: 120px;
                 padding: 10px 20px;
                 border: none;
                 border-radius: 5px;
@@ -803,7 +803,7 @@ body {
                         }
                     }
                     &__btn {
-                        margin-top: 200px;
+                        margin-top: 20px;
                     }
                 }
                 &-container2 {
@@ -850,7 +850,7 @@ body {
                         position: absolute;
                         top: 1120px;
                         @include WorkSans(16px, 600, 140%);
-                        width: 66%;
+                        width: 73%;
                     }
                 }
                 &-container2 {
