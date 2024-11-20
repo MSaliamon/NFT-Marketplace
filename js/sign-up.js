@@ -5,9 +5,11 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
  
     document.getElementById('nameError').textContent = '';
     document.getElementById('emailError').textContent = '';
+    document.getElementById('passwordError').textContent = '';
  
     let isValid = true;
  
@@ -24,12 +26,32 @@ document.getElementById('form').addEventListener('submit', function (event) {
         document.getElementById('emailError').textContent = 'Неправильний формат електронної пошти';
         isValid = false;
     }
+
+
+    if (password === '') {
+        document.getElementById('passwordError').textContent = 'Введіть ваш пароль';
+        isValid = false;
+    } else if (password.length < 8) {
+        document.getElementById('passwordError').textContent = 'Пароль має бути не менше 8 символів';
+        isValid = false;
+        this.style.color = 'black';
+    }
+ 
+    // const confirmPassword = document.getElementById('confirmPassword').value;
+ 
+    // if (confirmPassword === '') {
+    //     document.getElementById('confirmPasswordError').textContent = 'Потвердіть ваш пароль';
+    //     isValid = false;
+    // } else if (password !== confirmPassword) {
+    //     document.getElementById('confirmPasswordError').textContent = 'Паролі не співпадають';
+    //     isValid = false;
+    // }
  
  
     // Якщо форма пройшла валідацію
     if (isValid) {
         console.log('Форма успішно відправлена');
-        console.log({ name, email });
+        console.log({ name, email, password });
  
         // Можна очистити поля форми або відправити дані на сервер
         document.getElementById('form').reset();

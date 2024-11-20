@@ -57,13 +57,17 @@ body {
                         @include flex(column, flex-start, flex-start, 15px);
                         width: 100%;
                         .section1-form__label {
-                            @include flex(row, flex-start, center, 12px);
+                            @include flex(column, flex-start, flex-start, 12px);
                             padding: 20px 16px;
                             background-color: $text-color;
                             border-radius: 20px;
                             width: 50%;
+                            &-wrap {
+                                @include flex(row, flex-start, center, 12px);
+                            }
                             &-input {
                                 color: $bg-color;
+                                width: 100%;
                             }
                         }
                     }

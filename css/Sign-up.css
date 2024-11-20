@@ -286,6 +286,26 @@ body .main .section1-container .section1-form__wrap .section1-form__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  padding: 20px 16px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 50%;
+}
+body .main .section1-container .section1-form__wrap .section1-form__label-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -297,13 +317,10 @@ body .main .section1-container .section1-form__wrap .section1-form__label {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  padding: 20px 16px;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  width: 50%;
 }
 body .main .section1-container .section1-form__wrap .section1-form__label-input {
   color: #2B2B2B;
+  width: 100%;
 }
 body .main .section1-container .section1-form__btn {
   display: -webkit-box;
